@@ -4,19 +4,14 @@ import AppBar from './components/AppBar'
 import Loading from './components/Loading'
 import Paginator from './components/Paginator'
 import SideBar from './components/SideBar'
+import SearchRow from './components/SearchRow'
+
 import { API_KEY } from './config'
 import './App.css'
 
 import { grommet } from 'grommet/themes'
 import { deepMerge } from 'grommet/utils'
-import {
-  Box,
-  Grommet,
-  Main,
-  ResponsiveContext
-} from 'grommet'
-
-import SearchRow from './components/SearchRow'
+import { Box, Grommet, Main, ResponsiveContext } from 'grommet'
 
 const theme = deepMerge(grommet, {
   global: {
@@ -115,7 +110,7 @@ const App = () => {
                     setCategoryFunc={setCategory}
                     setTypFunc={setType}
                     setOrderByFunc={setOrderBy}
-                    filterValues={{imageCategory, imageType, orderBy}}
+                    filterValues={{ imageCategory, imageType, orderBy }}
                   />
                 )}
                 {!loading && results ? (
@@ -140,7 +135,7 @@ const App = () => {
                             savedPics={savedPics}
                           />
                         )}
-  
+
                         <Paginator
                           pages={total}
                           activePage={page}
