@@ -74,7 +74,7 @@ const ImageCards = ({ data, savePicFunc, savedPics }) => {
             <Nav direction="row" align="center">
               <Button
                 id={img.key}
-                primary={img.isSaved ? true:false}
+                primary={img.isSaved ? true : false}
                 icon={
                   img.isSaved ? (
                     <Cloud size="18px" color="brand" />

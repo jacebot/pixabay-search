@@ -1,5 +1,9 @@
 import React from 'react'
-import { dataImageCategory, dataImageType, dataOrder } from '../assets/constants'
+import {
+  dataImageCategory,
+  dataImageType,
+  dataOrder,
+} from '../assets/constants'
 import { Box, TextInput, Select } from 'grommet'
 
 import { Search, Reactjs } from 'grommet-icons'

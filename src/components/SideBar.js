@@ -4,8 +4,13 @@ import { Box, Button, Collapsible, Layer, Text } from 'grommet'
 
 import { DocumentMissing, FormClose } from 'grommet-icons'
 
-const SideBar = ({ size, savedPics, showSidebar, setSavedPicsFunc, setShowSidebarFunc}) => {
-
+const SideBar = ({
+  size,
+  savedPics,
+  showSidebar,
+  setSavedPicsFunc,
+  setShowSidebarFunc,
+}) => {
   const removeAll = () => {
     setSavedPicsFunc([])
     localStorage.removeItem('savedPics')
@@ -31,7 +36,10 @@ const SideBar = ({ size, savedPics, showSidebar, setSavedPicsFunc, setShowSideba
         direction="row"
       >
         Close&nbsp;
-        <Button icon={<FormClose />} onClick={() => setShowSidebarFunc(false)} />
+        <Button
+          icon={<FormClose />}
+          onClick={() => setShowSidebarFunc(false)}
+        />
       </Box>
       <Box
         width="medium"
@@ -74,7 +82,10 @@ const SideBar = ({ size, savedPics, showSidebar, setSavedPicsFunc, setShowSideba
         direction="row"
       >
         Close&nbsp;
-        <Button icon={<FormClose />} onClick={() => setShowSidebarFunc(false)} />
+        <Button
+          icon={<FormClose />}
+          onClick={() => setShowSidebarFunc(false)}
+        />
       </Box>
     </Layer>
   )
